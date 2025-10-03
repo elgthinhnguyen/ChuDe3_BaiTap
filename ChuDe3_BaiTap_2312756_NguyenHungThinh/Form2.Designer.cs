@@ -69,7 +69,6 @@
             this.mtxtMSSV.Name = "mtxtMSSV";
             this.mtxtMSSV.Size = new System.Drawing.Size(166, 22);
             this.mtxtMSSV.TabIndex = 31;
-//            this.mtxtMSSV.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxtMSSV_MaskInputRejected);
             this.mtxtMSSV.TextChanged += new System.EventHandler(this.mtxtMSSV_TextChanged);
             // 
             // lblMSSV

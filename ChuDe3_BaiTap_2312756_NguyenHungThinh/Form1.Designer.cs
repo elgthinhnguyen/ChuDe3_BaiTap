@@ -46,8 +46,14 @@
             this.mtxtSoDT = new System.Windows.Forms.MaskedTextBox();
             this.cbLop = new System.Windows.Forms.ComboBox();
             this.clbMonHoc = new System.Windows.Forms.CheckedListBox();
+            this.btnXoaTimKiem = new System.Windows.Forms.Button();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.xóaMônHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmMônHọcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnXuatFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMSSV
@@ -217,7 +223,6 @@
             this.dgvSinhVien.RowHeadersWidth = 51;
             this.dgvSinhVien.Size = new System.Drawing.Size(680, 150);
             this.dgvSinhVien.TabIndex = 24;
-            this.dgvSinhVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellContentClick);
             this.dgvSinhVien.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhVien_CellDoubleClick);
             // 
             // chkChon
@@ -290,25 +295,61 @@
             // 
             // clbMonHoc
             // 
+            this.clbMonHoc.ContextMenuStrip = this.contextMenuStrip2;
             this.clbMonHoc.FormattingEnabled = true;
-            this.clbMonHoc.Items.AddRange(new object[] {
-            "PhuongPhapNCKH",
-            "LapTrinhMang",
-            "LapTrinhCSDL",
-            "HeDieuHanh",
-            "LapTrinhTrenThietBiDiDong",
-            "AnToanVaBaoMatHeThong",
-            "DoAnCoSo",
-            "MangMayTinh"});
             this.clbMonHoc.Location = new System.Drawing.Point(22, 215);
             this.clbMonHoc.Name = "clbMonHoc";
             this.clbMonHoc.Size = new System.Drawing.Size(663, 140);
             this.clbMonHoc.TabIndex = 28;
-//            this.clbMonHoc.SelectedIndexChanged += new System.EventHandler(this.clbMonHoc_SelectedIndexChanged);
+            // 
+            // btnXoaTimKiem
+            // 
+            this.btnXoaTimKiem.Location = new System.Drawing.Point(146, 362);
+            this.btnXoaTimKiem.Name = "btnXoaTimKiem";
+            this.btnXoaTimKiem.Size = new System.Drawing.Size(124, 23);
+            this.btnXoaTimKiem.TabIndex = 29;
+            this.btnXoaTimKiem.Text = "Xóa Tìm Kiếm ";
+            this.btnXoaTimKiem.UseVisualStyleBackColor = true;
+            this.btnXoaTimKiem.Click += new System.EventHandler(this.btnXoaTimKiem_Click);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xóaMônHọcToolStripMenuItem,
+            this.thêmMônHọcToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(181, 52);
+            // 
+            // xóaMônHọcToolStripMenuItem
+            // 
+            this.xóaMônHọcToolStripMenuItem.Name = "xóaMônHọcToolStripMenuItem";
+            this.xóaMônHọcToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.xóaMônHọcToolStripMenuItem.Text = "Xóa Môn Học";
+            this.xóaMônHọcToolStripMenuItem.Click += new System.EventHandler(this.xóaMônHọcToolStripMenuItem_Click);
+            // 
+            // thêmMônHọcToolStripMenuItem
+            // 
+            this.thêmMônHọcToolStripMenuItem.Name = "thêmMônHọcToolStripMenuItem";
+            this.thêmMônHọcToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.thêmMônHọcToolStripMenuItem.Text = "Thêm Môn Học";
+            this.thêmMônHọcToolStripMenuItem.Click += new System.EventHandler(this.thêmMônHọcToolStripMenuItem_Click);
+            // 
+            // btnXuatFile
+            // 
+            this.btnXuatFile.Location = new System.Drawing.Point(20, 362);
+            this.btnXuatFile.Name = "btnXuatFile";
+            this.btnXuatFile.Size = new System.Drawing.Size(101, 23);
+            this.btnXuatFile.TabIndex = 31;
+            this.btnXuatFile.Text = "Xuất File";
+            this.btnXuatFile.UseVisualStyleBackColor = true;
+            this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(712, 600);
+            this.ClientSize = new System.Drawing.Size(718, 600);
+            this.Controls.Add(this.btnXuatFile);
+            this.Controls.Add(this.btnXoaTimKiem);
             this.Controls.Add(this.clbMonHoc);
             this.Controls.Add(this.cbLop);
             this.Controls.Add(this.mtxtSoDT);
@@ -339,6 +380,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,6 +403,11 @@
         private System.Windows.Forms.ToolStripMenuItem xóaTheoSelectToolStripMenuItem;
         private System.Windows.Forms.DataGridViewCheckBoxColumn chkChon;
         private System.Windows.Forms.CheckedListBox clbMonHoc;
+        private System.Windows.Forms.Button btnXoaTimKiem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem xóaMônHọcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thêmMônHọcToolStripMenuItem;
+        private System.Windows.Forms.Button btnXuatFile;
     }
 }
 

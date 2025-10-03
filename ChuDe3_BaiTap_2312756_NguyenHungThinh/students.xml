@@ -1,0 +1,37 @@
+﻿<ListOfSinhVien>
+	<SinhVien>
+		<HoVaTenLot>Nguyen Hung</HoVaTenLot>
+		<Ten>Thinh</Ten>
+		<Lop>CNTT1</Lop>
+		<NgaySinh>2002-11-02</NgaySinh>
+		<DiaChi>Quan1_TPHCM</DiaChi>
+		<GioiTinh>Nam</GioiTinh>
+		<SoCMND>123456789</SoCMND>
+		<MSSV>2312756</MSSV>
+		<SoDT>0909123456</SoDT>
+		<MonHoc>
+			<string>PhuongPhapNCKH</string>
+			<string>LapTrinhMang</string>
+			<string>LapTrinhCSDL</string>
+		</MonHoc>
+	</SinhVien>
+
+	<SinhVien>
+		<HoVaTenLot>Tran Van</HoVaTenLot>
+		<Ten>Binh</Ten>
+		<Lop>CNTT2</Lop>
+		<NgaySinh>2001-05-12</NgaySinh>
+		<DiaChi>Quan3_TPHCM</DiaChi>
+		<GioiTinh>Nam</GioiTinh>
+		<SoCMND>987654321</SoCMND>
+		<MSSV>2312001</MSSV>
+		<SoDT>0912345678</SoDT>
+		<MonHoc>
+			<string>HeDieuHanh</string>
+			<string>LapTrinhTrenThietBiDiDong</string>
+			<string>LapTrinhCSDL</string>
+		</MonHoc>
+	</SinhVien>
+
+	
+</ListOfSinhVien>

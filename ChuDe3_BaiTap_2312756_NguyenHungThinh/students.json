@@ -1,0 +1,51 @@
+[
+    {
+        "HoVaTenLot": "Nguyen Hung",
+        "Ten": "Thinh",
+        "Lop": "CNTT1",
+        "NgaySinh": "2002-11-02",
+        "DiaChi": "Quan1_TPHCM",
+        "GioiTinh": "Nam",
+        "SoCMND": "123456789",
+        "MSSV": "2312756",
+        "SoDT": "0909123456",
+        "MonHoc": [
+            "PhuongPhapNCKH",
+            "LapTrinhMang",
+            "LapTrinhCSDL"
+        ]
+    },
+    {
+        "HoVaTenLot": "Tran Van",
+        "Ten": "Binh",
+        "Lop": "CNTT2",
+        "NgaySinh": "2001-05-12",
+        "DiaChi": "Quan3_TPHCM",
+        "GioiTinh": "Nam",
+        "SoCMND": "987654321",
+        "MSSV": "2312001",
+        "SoDT": "0912345678",
+        "MonHoc": [
+            "HeDieuHanh",
+            "LapTrinhTrenThietBiDiDong",
+            "LapTrinhCSDL"
+        ]
+    },
+    {
+        "HoVaTenLot": "Le Thi",
+        "Ten": "Hoa",
+        "Lop": "CNTT1",
+        "NgaySinh": "2001-09-21",
+        "DiaChi": "Quan5_TPHCM",
+        "GioiTinh": "Nu",
+        "SoCMND": "135792468",
+        "MSSV": "2311999",
+        "SoDT": "0987654321",
+        "MonHoc": [
+            "DoAnCoSo",
+            "MangMayTinh",
+            "AnToanVaBaoMatHeThong"
+        ]
+    }
+
+]

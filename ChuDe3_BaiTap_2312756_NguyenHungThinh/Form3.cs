@@ -12,9 +12,21 @@ namespace ChuDe3_BaiTap_2312756_NguyenHungThinh
 {
     public partial class Form3 : Form
     {
+        public event Action<string> tenMonHoc;
         public Form3()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            tenMonHoc?.Invoke(txtTenMonHoc.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
